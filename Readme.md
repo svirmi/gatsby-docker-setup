@@ -1,12 +1,12 @@
 ## Gatsby starter DOCKER setup
 #### Host machine may not have node and npm installed. Only DOCKER on host machine required.
 
-### Initialize project, set up gatsby-cli
+### 1. Initialize project, set up gatsby-cli
 ```bash
 docker run -it --rm -p 8000:8000 -u $(id -u ${USER}):$(id -g ${USER}) -v ${PWD}:/app node:11 /bin/sh
 ```
 
-### Inside running container run commands
+### 2. Inside running container run commands
 ```bash
 cd app
 ```
@@ -15,7 +15,7 @@ cd app
 yarn add gatsby-dev-cli
 ```
 
-### Start develop
+### 3. Start develop
 
 ```bash
 cd gatsby-site
@@ -28,13 +28,13 @@ yarn gatsby develop -H 0.0.0.0
 ### See the project
 http://0.0.0.0:8000/
 
-### Press CTRL-C to stop process and type
+### 4. Press CTRL-C to stop process and type
 ```bash
 exit
 ```
-to leave container
+to stop and leave a container
 
-### Next time to start developing run command at host machine
+### 5. Next time to start developing run command at host machine
 ```bash
 docker run -it --rm -p 8000:8000 -u $(id -u ${USER}):$(id -g ${USER}) -v ${PWD}:/app node:11 /bin/sh
 ```
@@ -44,3 +44,20 @@ cd app/gatsby-site
 ```bash
 yarn gatsby develop -H 0.0.0.0
 ```
+
+### If you cloned this repo and want to try, run these commands:
+* at host machine
+```bash
+docker run -it --rm -p 8000:8000 -u $(id -u ${USER}):$(id -g ${USER}) -v ${PWD}:/app node:11 /bin/sh
+```
+* then these three commands inside container
+```bash
+cd app/gatsby-site
+```
+```bash
+yarn
+```
+```bash
+yarn gatsby develop -H 0.0.0.0
+```
+ 
