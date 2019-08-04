@@ -12,10 +12,14 @@ cd app
 ```
 
 ```bash
-yarn add gatsby-dev-cli
+yarn add gatsby-dev-cli OR yarn add gatsby-cli
 ```
 
 ### 3. Start develop
+
+```bash
+yarn gatsby new gatsby-site OR yarn gatsby new , this starts a dialog about creation new gatsby project
+```
 
 ```bash
 cd gatsby-site
