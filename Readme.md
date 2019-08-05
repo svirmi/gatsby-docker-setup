@@ -3,7 +3,7 @@
 
 ### 1. Initialize project, set up gatsby-cli
 ```bash
-docker run -it --rm -p 8000:8000 -u $(id -u ${USER}):$(id -g ${USER}) -v ${PWD}:/app node:11 /bin/sh
+docker run -it --rm -p 8000:8000 -u $(id -u ${USER}):$(id -g ${USER}) -v ${PWD}:/app node:12 /bin/sh
 ```
 
 ### 2. Inside running container run commands
@@ -40,7 +40,7 @@ to stop and leave a container
 
 ### 5. Next time to start developing run command at host machine
 ```bash
-docker run -it --rm -p 8000:8000 -u $(id -u ${USER}):$(id -g ${USER}) -v ${PWD}:/app node:11 /bin/sh
+docker run -it --rm -p 8000:8000 -u $(id -u ${USER}):$(id -g ${USER}) -v ${PWD}:/app node:12 /bin/sh
 ```
 ```bash
 cd app/gatsby-site
@@ -52,7 +52,7 @@ yarn gatsby develop -H 0.0.0.0
 ### If you cloned this repo and want to try, run these commands:
 * at host machine
 ```bash
-docker run -it --rm -p 8000:8000 -u $(id -u ${USER}):$(id -g ${USER}) -v ${PWD}:/app node:11 /bin/sh
+docker run -it --rm -p 8000:8000 -u $(id -u ${USER}):$(id -g ${USER}) -v ${PWD}:/app node:12 /bin/sh
 ```
 * then these three commands inside container
 ```bash
