@@ -18,7 +18,7 @@ yarn add gatsby-dev-cli OR yarn add gatsby-cli
 ### 3. Start develop
 
 ```bash
-yarn gatsby new gatsby-site OR yarn gatsby new , this starts a dialog about creation new gatsby project
+yarn gatsby new gatsby-site OR yarn gatsby new , the last one starts a dialog about creation new gatsby project
 ```
 
 ```bash
@@ -56,7 +56,7 @@ docker run -it --rm -p 8000:8000 -u $(id -u ${USER}):$(id -g ${USER}) -v ${PWD}:
 ```
 * then these three commands inside container
 ```bash
-cd app/gatsby-site
+cd app/bootcamp
 ```
 ```bash
 yarn
