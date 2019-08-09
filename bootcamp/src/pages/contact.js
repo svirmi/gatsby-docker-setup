@@ -1,19 +1,16 @@
 import React from "react"
+
+import Layout from "../components/layout"
+
 import { Link } from "gatsby";
-
-import Footer from "../components/footer";
-import Header from "../components/header";
-
 
 const ContactPage = () => {
     return (
-        <div>
-            <Header/>
+        <Layout>
             <h1>Contact page</h1>
             <h2>Contact details</h2>
             <p><Link to="/">Link to Index page</Link></p>
-            <Footer/>
-        </div>
+        </Layout>
     )
 }
 
