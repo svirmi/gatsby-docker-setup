@@ -6,5 +6,9 @@
 
 module.exports = {
   /* Your site config here */
+    siteMetadata: {
+        title: 'Gatsby site !',
+        email: 'mixa.ru.ru@gmail.com'
+    },
     plugins: [`gatsby-plugin-sass`]
 }
