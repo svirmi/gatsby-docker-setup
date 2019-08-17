@@ -6,8 +6,7 @@ const Footer = () => {
     const data = useStaticQuery(graphql`    
         query {
             site {
-                siteMetadata {
-                    
+                siteMetadata {                    
                          email
                      }
                 }
