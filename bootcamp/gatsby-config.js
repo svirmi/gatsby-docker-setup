@@ -10,5 +10,14 @@ module.exports = {
         title: 'Gatsby site !',
         email: 'my@email.com'
     },
-    plugins: [`gatsby-plugin-sass`]
-}
+    plugins: [
+        `gatsby-plugin-sass`,
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `src`,
+                path: `${__dirname}/src/`,
+            },
+        },
+    ]
+};
