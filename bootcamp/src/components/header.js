@@ -36,16 +36,19 @@ const Header = () => {
                     </li>
                     <li>
                         <Link to="/blog"
+                              partiallyActive={true}
                               className={HeaderStyles.navItem}
                               activeStyle={activeStyles}>Blog</Link>
                     </li>
                     <li>
                         <Link to="/contact"
+                              partiallyActive={true}
                               className={HeaderStyles.navItem}
                               activeStyle={activeStyles}>Contact</Link>
                     </li>
                     <li>
                         <Link to="/about"
+                              partiallyActive={true}
                               className={HeaderStyles.navItem}
                               activeStyle={activeStyles}>About</Link>
                     </li>

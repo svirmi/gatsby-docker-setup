@@ -64,4 +64,9 @@ yarn
 ```bash
 yarn gatsby develop -H 0.0.0.0
 ```
+
+---
+Possible fix for direct links access active styling:
+https://github.com/iammatthias/.com/issues/59
+
  
